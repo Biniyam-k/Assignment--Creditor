@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+                Scanner scan = new Scanner(System.in);
         System.out.println("Welcome To ACT Credit Bank");
         System.out.println("We are processing your request for loan");
         System.out.println("Please Enter Your Full Name");
@@ -90,10 +90,12 @@ public class Main {
                         if (own == 1) {
                             System.out.println("You are almost done. One last Question.");
                             System.out.println("Do you have a criminal record? Press 1 for Yes Press 2 for N0");
-                        } else System.out.println("Your process has been terminated. Please contact our employees at the front desk");
-                        byte criminal;
-                        criminal = scan.nextByte();
-                        if (criminal == 2) {
+                        } else
+                            System.out.println("Your process has been terminated. Please contact our employees at the front desk");
+                    }}
+                byte criminal;
+                criminal = scan.nextByte();
+                if (criminal == 2) {
                             System.out.println("Congrtulation your loan has been approved.");
                             System.out.println("Please contact our employees at the front desk");
                             System.out.println("Thank You for choosing ACT BANK ");
@@ -105,9 +107,6 @@ public class Main {
 
                 } else System.out.println("Your process has been terminated. Please contact our employees at the front desk");
 
-            }else System.out.println("Your process has been terminated. Please contact our employees at the front desk");
-
-        }else System.out.println("Your process has been terminated. Please contact our employees at the front desk");
 
     }
 }
